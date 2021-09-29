@@ -7,7 +7,7 @@ https://twitter.com/Citizen4110 <br />
 https://github.com/finkegabriel <br />
 https://finkegabriel.com
 
-# Favorite things to work on
+# Favorite things to do
 
 Been doing some ML (Machine Learning) with Yolov3 recently. 🦀 💻 🐬 🐘 <br />
 Hiking ⛰
