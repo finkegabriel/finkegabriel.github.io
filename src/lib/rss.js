@@ -1,0 +1,1 @@
+var RSS = require('rss');
