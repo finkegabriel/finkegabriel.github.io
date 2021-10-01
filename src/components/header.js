@@ -51,7 +51,7 @@ function ButtonAppBar(props) {
                 <Link style={baseStyles.li} to="/">Home</Link>
               </li>
               <li style={baseStyles.a}>
-                <Link style={baseStyles.li} to="/blog">Projects</Link>
+                <Link style={baseStyles.li} to="/blog">Blog</Link>
               </li>
             </ul>
           </nav>

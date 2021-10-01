@@ -14,7 +14,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
-          <Route exact path="/:id" component={(routerProps) => GenerateBlog(routerProps)} />
+          <Route exact path="/blog/:id" component={(routerProps) => GenerateBlog(routerProps)} />
         </Switch>
       </Router>
     );
