@@ -1,3 +1,4 @@
+[![finkegabriel_deploy](https://github.com/finkegabriel/finkegabriel/actions/workflows/finkegabriel_deploy.yml/badge.svg)](https://github.com/finkegabriel/finkegabriel/actions/workflows/finkegabriel_deploy.yml)
 # WhoAmI
 I am an environmental engineering major here in Arizona. I hack on software/hardware, am a member of HeatSync Labs in downtown Mesa (PHX local hackerspace). 
 
