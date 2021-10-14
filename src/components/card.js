@@ -37,7 +37,7 @@ const baseStyles = {
 
 export default function SimpleCard(props) {
     return (
-        <div style={baseStyles.width, props.style}>
+        <div style={props.style}>
             <center>
                 <Card style={baseStyles.cardWidth}>
                     <center>

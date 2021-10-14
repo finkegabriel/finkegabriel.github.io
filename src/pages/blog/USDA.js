@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Img from 'react-cloudinary-lazy-image';
 import Main from '../../posts/main';
 import Photo from '../../posts/USDA/photos';
 
@@ -41,7 +40,7 @@ export default function Blog() {
                             <p>
                                 <p>Sadly, due to COVID-19, I was only able to go down to the facility once a week for two months straight. During this time, I was working remotely unless I needed to go into the office. On a day I needed to go in, I would drive an hour from where I lived to Maricopa and setup the sensor equipment on Hamby. Drive Hamby an additional 30 minutes out of the garage at ALARC to the agriculture fields (because the tractor could only travel about 5mph). At the start I was mapping one or two fields just to test the phenotyping system, but after a while I was able to map the two soybean and 4 additional guayule fields. Bellow I will post a map of the rough outline of the route I would take during this process.  </p>
                                 <center>
-                                    <img style={{ borderRadius: '25px' }} src={Photo.FirstPhoto} width="250rem" height="300rem"></img>
+                                    <img alt="background" style={{ borderRadius: '25px' }} src={Photo.FirstPhoto} width="250rem" height="300rem"></img>
                                 </center>
                                 <br></br>
                                 <b>Seed Counting:</b>
