@@ -25,5 +25,6 @@ jobs:
             git config --global user.name ${{secrets.USERNAME}}
             git remote set-url origin https://${{secrets.PERSONAL_TOKEN}}@github.com/${{secrets.USERNAME}}/finkegabriel.git
             npm run deploy
+            add-domain
       - name: Updating Domain
-        run: echo "Update domain :("
+        run: echo "Domain should auto update :)"
