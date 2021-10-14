@@ -28,7 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "add-domain": "echo \"finkegabriel.com\" > build/CNAME",
+    "add-domain": "echo \"finkegabriel.com\" > public/CNAME",
     "eject": "react-scripts eject",
     "start:db": "npm-run-all --parallel start:app start:server",
     "start:app": "react-scripts start",
