@@ -3,11 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-// import Header from './Header';
-// import MainFeaturedPost from './MainFeaturedPost';
-// import FeaturedPost from './FeaturedPost';
+import Img from 'react-cloudinary-lazy-image';
 import Main from '../../posts/main';
-// import Sidebar from './Sidebar';
 import Photo from '../../posts/USDA/photos';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,15 +22,8 @@ export default function Blog() {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="lg">
-                {/* <Header title="Blog" sections={sections} /> */}
                 <main>
-                    {/* <MainFeaturedPost post={mainFeaturedPost} /> */}
                     <Grid container spacing={4}>
-
-                        {/* {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))} */}
-
                     </Grid>
                     <Grid container spacing={5} className={classes.mainGrid}>
                         <Main title="USDA Internship" posts={posts} />

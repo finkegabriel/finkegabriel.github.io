@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfileCard from '../components/profileCard';
+import { GoMarkGithub } from 'react-icons/go';
 
 const baseStyles = {
     card: {
@@ -20,7 +21,11 @@ const baseStyles = {
         backgroundColor: '#7E716E',
         color: 'white',
         textAlign: 'center',
-    }
+    },
+    github: {
+        textDecoration: 'none',
+        color: 'inherit',
+    },
 }
 
 const Gabe = "https://avatars2.githubusercontent.com/u/40010444?s=460&v=4";
@@ -38,7 +43,7 @@ function Home() {
             <div style={baseStyles.status}>
             </div>
             <footer style={baseStyles.footer}>
-                <p>Author: Gabriel Finke<br></br></p>
+                <p><GoMarkGithub /> <a style={baseStyles.github} href="https://github.com/finkegabriel">Github</a><br></br></p>
             </footer>
         </div>
     )
