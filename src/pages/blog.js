@@ -6,7 +6,7 @@ class Blog extends Component {
     render() {
         return (
             <div>
-                {Post.post.map(p => (
+                {Post.post.slice(0).reverse().map(p => (
                     <Card
                         props={this.props}
                         url={p.uuid}
