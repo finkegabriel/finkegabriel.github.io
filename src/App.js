@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route,HashRouter } from "react-router-dom";
 
 import Nav from './components/header';
 import Blog from './pages/blog';
@@ -11,11 +11,11 @@ class App extends Component {
     return (
       <Router>
         <Nav />
-        <Switch>
+        <HashRouter>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/bat/:id" component={GenerateBlog.GenerateBlog} />
-        </Switch>
+        </HashRouter>
       </Router>
     );
   }
