@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Card from '../components/card'
-import Post from '../posts/posts';
+import posts from '../posts/generateBlog';
 
 class Blog extends Component {
     render() {
         return (
             <div>
-                {Post.post.slice(0).reverse().map(p => (
+                {posts.posts.post.slice(0).reverse().map(p => (
                     <Card
                         props={this.props}
                         url={p.uuid}

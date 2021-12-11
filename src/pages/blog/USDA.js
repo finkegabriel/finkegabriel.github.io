@@ -14,9 +14,9 @@ const useStyles = makeStyles((theme) => ({
 
 const posts = [];
 
-export default function Blog() {
-    const classes = useStyles();
+export default function USDA(){
 
+    const classes = useStyles();
     return (
         <React.Fragment>
             <CssBaseline />
@@ -61,12 +61,6 @@ export default function Blog() {
                             <p></p>
 
                         </div>
-                        {/* <Sidebar
-              title={sidebar.title}
-              description={sidebar.description}
-              archives={sidebar.archives}
-              social={sidebar.social}
-            /> */}
                     </Grid>
                 </main>
             </Container>

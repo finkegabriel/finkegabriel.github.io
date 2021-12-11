@@ -59,7 +59,7 @@ export default function SimpleCard(props) {
                         </CardContent>
                     </center>
                     <CardActions>
-                        <Button onClick={() => props.props.history.push("/" + props.url)} size="small">Continue Reading...</Button>
+                        <Button onClick={() => props.props.history.push(props.url)} size="small">Continue Reading...</Button>
                     </CardActions>
                 </Card>
             </center>
