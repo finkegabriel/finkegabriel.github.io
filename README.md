@@ -19,7 +19,7 @@ Been doing some ML (Machine Learning) with TensorFlow recently. <br />
 Hiking ⛰<br>
 Running 🏃 <br>
 
-# ideas 💡 && what I have been up to in 2021
+# ideas 💡 && what I have been up to in 2022
 
 Thinking about updating my personal website, and making it more user friendly <br>
 Been writing more rust code <br>
