@@ -53,6 +53,9 @@ function ButtonAppBar(props) {
               <li style={baseStyles.a}>
                 <Link style={baseStyles.li} to="/blog">Blog</Link>
               </li>
+              <li style={baseStyles.a}>
+                <Link style={baseStyles.li} to="/portfolio">Portfolio</Link>
+              </li>
             </ul>
           </nav>
         </Toolbar>

@@ -3,6 +3,7 @@ import { BrowserRouter, BrowserRouter as Router, Route, Switch } from "react-rou
 import Nav from './components/header';
 import Blog from './pages/blog';
 import Home from './pages/home';
+import Portfolio from './pages/portfolio';
 import GenerateBlog from './posts/generateBlog';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/bat/:id" component={GenerateBlog.GenerateBlog} />
+          <Route path="/portfolio" component={Portfolio}/>
         </Switch>
       </Router>
     );
