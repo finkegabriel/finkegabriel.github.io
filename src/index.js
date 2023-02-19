@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import ReactGA from 'react-ga';
 const trackingId = process.env.GTRACKER; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
-
+console.log("tracker ",trackingId);
 ReactDOM.render(
     <BrowserRouter>
         <App />
