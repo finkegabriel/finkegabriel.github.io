@@ -3,6 +3,9 @@ import { BrowserRouter, BrowserRouter as Router, Route, Switch } from "react-rou
 import Nav from './components/header';
 import Blog from './pages/blog';
 import Home from './pages/home';
+import ActiveG from './pages/activeg';
+import MedProject from './pages/medproject';
+import IcedDev from './pages/iceddev';
 import Portfolio from './pages/portfolio';
 import GenerateBlog from './posts/generateBlog';
 import { createBrowserHistory } from 'history';
@@ -25,6 +28,9 @@ class App extends Component {
           <Route path="/blog" component={Blog} />
           <Route path="/bat/:id" component={GenerateBlog.GenerateBlog} />
           <Route path="/portfolio" component={Portfolio}/>
+          <Route path="/activeg" component={ActiveG.ActiveG}/>
+          <Route path="/iceddev" component={IcedDev.IcedDev}/>
+          <Route path="/medproject" component={MedProject.MedProject}/>
         </Switch>
       </Router>
     );

@@ -37,7 +37,7 @@ class Portfolio extends Component {
                     <a href='/bat/0e3e8a27-6e7d-4c6e-bd32-4a1141645f05'>
                         <input type="button" value='USDA'></input>                    
                     </a>
-                    <a href=''>
+                    <a href='/activeg'>
                         <input type="button" value='ActiveG'></input>
                     </a>
                 </center>
