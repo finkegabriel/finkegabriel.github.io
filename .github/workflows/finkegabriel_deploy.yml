@@ -11,8 +11,6 @@ jobs:
     strategy:
       matrix:
         node-version: [15.13.0]
-    env:
-        GTRACKER: ${{ secrets.GTRACKER }}
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
@@ -22,6 +20,8 @@ jobs:
       - name: Install Packages
         run: npm i
       - name: Deploy to GH Pages 
+        env:
+          GTRACKER: ${{ secrets.GTRACKER }}
         run: | 
             git config --global user.email ${{secrets.EMAIL}}
             git config --global user.name ${{secrets.USERNAME}}
