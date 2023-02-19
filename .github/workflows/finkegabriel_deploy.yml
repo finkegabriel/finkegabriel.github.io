@@ -5,7 +5,7 @@ on:
       - main
 env: 
   CI: false
-  GTRACKER: ${{ vars.GTRACKER }}
+  GTRACKER: ${{ secrets.GTRACKER }}
 jobs:
   build:
     runs-on: ubuntu-latest
