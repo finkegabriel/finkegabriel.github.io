@@ -5,7 +5,6 @@ on:
       - main
 env: 
   CI: false
-  GTRACKER: ${{ secrets.GTRACKER }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,5 +26,7 @@ jobs:
             git remote set-url origin https://${{secrets.PERSONAL_TOKEN}}@github.com/${{secrets.USERNAME}}/finkegabriel.github.io.git
             npm run add-domain
             npm run deploy
+        env:
+          GTRACKER: ${{ secrets.GTRACKER }}
       - name: Updating Domain
         run: echo "Domain should auto update :)"
