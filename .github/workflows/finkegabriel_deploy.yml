@@ -26,7 +26,9 @@ jobs:
             git remote set-url origin https://${{secrets.PERSONAL_TOKEN}}@github.com/${{secrets.USERNAME}}/finkegabriel.github.io.git
             npm run add-domain
             npm run deploy
-        env:
+      - name: Export ENVS
+        run: echo ${{ secrets.GTRACKER }}
+        env: 
           GTRACKER: ${{ secrets.GTRACKER }}
       - name: Updating Domain
         run: echo "Domain should auto update :)"
