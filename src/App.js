@@ -18,6 +18,8 @@ history.listen(location => {
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
 
+console.log("tracker ",process.env.GTRACKER);
+
 class App extends Component {
   render() {
     return (
