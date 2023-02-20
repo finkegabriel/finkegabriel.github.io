@@ -19,7 +19,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
         run: npm i
-      - name: Deploy to GH Pages 
+      - name: Deploy to GH Pages
         run: | 
             git config --global user.email ${{secrets.EMAIL}}
             git config --global user.name ${{secrets.USERNAME}}
@@ -27,7 +27,7 @@ jobs:
             npm run add-domain
             npm run deploy
       - name: Export ENVS
-        run: export $GTRACKER
+        run: export GTRACKER=$GTRACKER
         env: 
           GTRACKER: ${{ secrets.GTRACKER }}
       - name: Updating Domain
