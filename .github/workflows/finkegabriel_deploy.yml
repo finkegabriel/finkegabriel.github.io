@@ -27,7 +27,7 @@ jobs:
             npm run add-domain
             npm run deploy
       - name: Export ENVS
-        run: echo $GTRACKER
+        run: export $GTRACKER
         env: 
           GTRACKER: ${{ secrets.GTRACKER }}
       - name: Updating Domain
