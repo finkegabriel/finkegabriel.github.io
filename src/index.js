@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
 import ReactGA from 'react-ga';
-const trackingId = process.env.GTRACKER; // Replace with your Google Analytics tracking ID
+const trackingId = "G-B99NR7TNKQ"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
 console.log("tracker ",trackingId);
 ReactDOM.render(
