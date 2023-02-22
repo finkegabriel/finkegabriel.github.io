@@ -12,6 +12,9 @@ import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga4';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
+const trackingId = 'G-DHR8Q1P969'; // Replace with your Google Analytics tracking ID
+ReactGA.initialize('G-DHR8Q1P969');
+console.log("tracker ",trackingId);
 
 const history = createBrowserHistory();
 
