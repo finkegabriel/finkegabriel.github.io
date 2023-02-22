@@ -12,6 +12,7 @@ import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga4';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
+import { Adsense } from '@ctrl/react-adsense';
 const trackingId = 'G-DHR8Q1P969'; // Replace with your Google Analytics tracking ID
 ReactGA.initialize('G-DHR8Q1P969');
 console.log("tracker ",trackingId);
@@ -40,6 +41,9 @@ class App extends Component {
     return (
       <Router history={history}>
         <Nav />
+        <Adsense
+          client='ca-pub-3195033728396210'
+        />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
