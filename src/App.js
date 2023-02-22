@@ -14,8 +14,7 @@ import ReactGA from 'react-ga4';
 const history = createBrowserHistory();
 
 history.listen(location => {
-  ReactGA.send({ page: location.pathname }); // Update the user's current page
-  ReactGA.send(location.pathname); // Record a pageview for the given page
+  ReactGA.send({hitType: "pageview", page: location.pathname }); // Update the user's current page
 });
 
 class App extends Component {
