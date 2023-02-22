@@ -41,9 +41,6 @@ class App extends Component {
     return (
       <Router history={history}>
         <Nav />
-        <Adsense
-          client='ca-pub-3195033728396210'
-        />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
