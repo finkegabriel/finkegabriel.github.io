@@ -9,16 +9,14 @@ import IcedDev from './pages/iceddev';
 import Portfolio from './pages/portfolio';
 import GenerateBlog from './posts/generateBlog';
 import { createBrowserHistory } from 'history';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const history = createBrowserHistory();
 
 history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+  ReactGA.send({ page: location.pathname }); // Update the user's current page
+  ReactGA.send(location.pathname); // Record a pageview for the given page
 });
-
-console.log("tracker ",process.env.GTRACKER);
 
 class App extends Component {
   render() {
