@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
 import ReactGA from 'react-ga4';
 const trackingId = 'G-DHR8Q1P969'; // Replace with your Google Analytics tracking ID
-ReactGA.initialize([{GA_MEASUREMENT_ID:trackingId}]);
+ReactGA.initialize('G-DHR8Q1P969');
 console.log("tracker ",trackingId);
 ReactDOM.render(
     <BrowserRouter>
