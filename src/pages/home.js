@@ -43,7 +43,6 @@ function Home() {
             />
             <div style={baseStyles.status}>
             </div>
-            <meta name="a.validate.02" content="tZ6GpPGaRf7UGgbeZaIrtGtVoH8f81CDBJ3x" />
             <footer style={baseStyles.footer}>
                 <p><GoMarkGithub /> <a style={baseStyles.github} href="https://github.com/finkegabriel">Github</a><br></br></p>
             </footer>
