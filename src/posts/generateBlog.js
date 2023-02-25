@@ -23,6 +23,16 @@ function gen(props) {
 }
 
 class GenerateBlog extends React.Component {
+    componentDidMount () {
+        const script = document.createElement("script");
+    
+        script.src = "//acscdn.com/script/atg.js";
+        script.async = true;
+        script.setAttribute('czid','tj090ao3sj');
+        script.setAttribute('data-adel','atag');
+    
+        document.body.appendChild(script);
+    }
     render() {
         return (
             <div>
