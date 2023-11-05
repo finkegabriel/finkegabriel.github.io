@@ -54,7 +54,10 @@ function ButtonAppBar(props) {
                 <Link style={baseStyles.li} to="/blog">Blog</Link>
               </li>
               <li style={baseStyles.a}>
-                <Link style={baseStyles.li} to="/portfolio">Portfolio</Link>
+                {/* <Link style={baseStyles.li} to="https://shop.finekgabriel.com">Portfolio</Link> */}
+                <a style={baseStyles.li} href="https://shop.finkegabriel.com" rel="noreferrer" target="_blank">
+                  Shop
+                </a>
               </li>
             </ul>
           </nav>

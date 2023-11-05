@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Nav from './components/header';
 import Blog from './pages/blog';
 import Home from './pages/home';
@@ -15,12 +15,12 @@ import { getAnalytics } from 'firebase/analytics';
 import { Adsense } from '@ctrl/react-adsense';
 const trackingId = 'G-DHR8Q1P969'; // Replace with your Google Analytics tracking ID
 ReactGA.initialize('G-DHR8Q1P969');
-console.log("tracker ",trackingId);
+console.log("tracker ", trackingId);
 
 const history = createBrowserHistory();
 
 history.listen(location => {
-  ReactGA.send({hitType: "pageview", page: location.pathname }); // Update the user's current page
+  ReactGA.send({ hitType: "pageview", page: location.pathname }); // Update the user's current page
 });
 
 const firebaseConfig = {
@@ -45,10 +45,9 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/bat/:id" component={GenerateBlog.GenerateBlog} />
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/activeg" component={ActiveG.ActiveG}/>
-          <Route path="/iceddev" component={IcedDev.IcedDev}/>
-          <Route path="/medproject" component={MedProject.MedProject}/>
+          <Route path="/activeg" component={ActiveG.ActiveG} />
+          <Route path="/iceddev" component={IcedDev.IcedDev} />
+          <Route path="/medproject" component={MedProject.MedProject} />
         </Switch>
       </Router>
     );
