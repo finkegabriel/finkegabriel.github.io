@@ -39,7 +39,7 @@ function Home() {
                 image={Gabe}
                 styles={baseStyles.image}
                 name="Gabe"
-                jobDesc="Hello, and welcome to my blog! I am an engineering student in Arizona concentrating on environmental engineering. I have been constantly working on projects throughout my life and I have finally got around to documenting these achievements. I work on a variety of things from telescopes to drones, and everything in between. I hope you enjoy!!"
+                jobDesc=""
             />
             <div style={baseStyles.status}>
             </div>
