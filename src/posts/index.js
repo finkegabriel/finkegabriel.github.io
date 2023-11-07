@@ -1,12 +1,18 @@
 import USDA from './USDA/USDA';
 import TELESCOPE from './TELESCOPE/TELESCOPE';
 import BAG from './BAG/BAG';
+import CIRCUIT_PINE from './CIRCUIT_PINE';
 
 export default {
     USDA: {
         title: "USDA Internship",
         post: USDA,
         cover_photo: USDA.COVER_PHOTO,
+    },
+    CIRCUIT_PINE:{
+        title:"Circuit Pine",
+        post:CIRCUIT_PINE,
+        cover_photo:CIRCUIT_PINE.COVER_PHOTO
     },
     TELESCOPE: {
         title: "Telescope Project",
