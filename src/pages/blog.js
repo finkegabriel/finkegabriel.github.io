@@ -10,6 +10,7 @@ class Blog extends Component {
                     <Card
                         props={this.props}
                         url={p.uuid}
+                        isDisabled={p.isDisabled}
                         title={p.post.title}
                         style={{ marginTop: `${1}rem` }}
                         date={p.post.date}

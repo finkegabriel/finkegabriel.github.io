@@ -7,7 +7,7 @@ const baseStyles = {
     card: {
         // float:'left',
         position: 'relative',
-        bottom: '-15rem',
+        bottom: '0rem',
         marginTop: '1.5rem',
         justifyContent: 'space-evenly',
         alignItems: 'center'
@@ -38,6 +38,14 @@ function Home() {
     return (
         <div style={baseStyles.card}>
             <center>
+            <h3>Hello, I am Gabe.</h3>
+            <h3>I am an Engineer 🔭</h3>
+            <h3>Developer 💻</h3>
+            <h3>Entrepreneur 💼</h3>
+            <h3>in Phoenix Arizona 📍</h3>
+            </center>
+            <center>
+
                 <ProfileCard
                     image={Gabe}
                     styles={baseStyles.image}
@@ -50,7 +58,6 @@ function Home() {
                     <p><GoMarkGithub /> <a style={baseStyles.github} href="https://github.com/finkegabriel">Github</a><br></br></p>
                 </footer>
             </center>
-            {/* <iframe src={"//rcm-na.amazon-adsystem.com/e/cm?o=1&p=288&l=ur1&category=bestsellingproducts&banner=03JGEXJ8VWRFPFC6SYG2&f=ifr&linkID=44aae76c3d8d21ce093baa6db09d8b5c&t=gfinke1019-20&tracking_id=gfinke1019-20"} width="320" height="50" scrolling="no" border="0" marginwidth="0" style={{border:'none'}} frameborder="0"></iframe> */}
         </div>
     )
 }

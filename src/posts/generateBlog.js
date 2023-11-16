@@ -5,8 +5,8 @@ import Posts from './index.js';
 import CIRCUIT_PINE from '../pages/blog/CIRCUIT_PINE';
 
 const posts = {
-    post: [{ uuid: "/bat/USDA", component: <USDA />, post: Posts.USDA },
-    { uuid: "/bat/circuitpine", component: <CIRCUIT_PINE />, post: Posts.CIRCUIT_PINE }
+    post: [{ uuid: "/bat/USDA", component: <USDA />, post: Posts.USDA,isDisabled:false },
+    { uuid: "/bat/circuitpine", component: <CIRCUIT_PINE />, post: Posts.CIRCUIT_PINE, isDisabled:true}
 ],
 }
 

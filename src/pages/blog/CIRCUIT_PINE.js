@@ -28,7 +28,8 @@ export default function USDA(){
                         <Main title="Circuit Pine" posts={posts} />
                         <div style={{ width: '90%', marginLeft: '6%', fontSize: '1rem' }}>
                             <b>Intro:</b>
-
+                            <p>Thank you for your interest in Circuit Pine! This started out in 2022 with wanting to make fun Christmas tree ornaments that embodied the maker/hacker spirit. Now in 2023 I am selling them! Hopefully bringing that same spirit to a child or adult interested in electronics. I am selling Circuit Pine in a kit. </p>
+                            
                         </div>
                     </Grid>
                 </main>
