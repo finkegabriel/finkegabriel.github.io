@@ -1,7 +1,8 @@
 import React from 'react';
 import ProfileCard from '../components/profileCard';
-import { GoMarkGithub } from 'react-icons/go';
+// import { GoMarkGithub } from 'react-icons/go';
 import { Adsense } from '@ctrl/react-adsense';
+import Github_logo from '../img/github-mark-white.png';
 
 const baseStyles = {
     card: {
@@ -38,11 +39,6 @@ function Home() {
     return (
         <div style={baseStyles.card}>
             <center>
-            <h3>Hello, I am Gabe.</h3>
-            <h3>I am an Engineer 🔭</h3>
-            <h3>Developer 💻</h3>
-            <h3>Entrepreneur 💼</h3>
-            <h3>in Phoenix Arizona 📍</h3>
             </center>
             <center>
 
@@ -55,7 +51,7 @@ function Home() {
                 <div style={baseStyles.status}>
                 </div>
                 <footer style={baseStyles.footer}>
-                    <p><GoMarkGithub /> <a style={baseStyles.github} href="https://github.com/finkegabriel">Github</a><br></br></p>
+                <p><img src={Github_logo} height="20px" width="20px"></img> <a style={baseStyles.github} href="https://github.com/finkegabriel">Github</a><br></br></p>
                 </footer>
             </center>
         </div>
