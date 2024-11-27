@@ -54,9 +54,10 @@ export default function Bag(props) {
                         <Grid container spacing={4}>
                         </Grid>
                         <Grid container spacing={5} className={classes.mainGrid}>
-                            <Main title="Tech Christmas gift ideas 2024" posts={posts} />
+                            <Main title="Tech Christmas Gift Ideas 2024" posts={posts} />
                             <div style={{ width: '90%', marginLeft: '6%', fontSize: '1rem' }}>
                                 <b>Intro:</b>
+                                <p>If someone in your life is a maker/hacker/tech enthusiast I have curated a list of general items for possible gift ideas.</p>
                                 {/* <Gallery photos={photos} /> */}
                             </div>
                         </Grid>

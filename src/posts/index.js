@@ -31,7 +31,7 @@ export default {
         cover_photo: BAG.COVER_PHOTO,
     },
     Christmas2024:{
-        title:"Christmas gifts 2024",
+        title:"Christmas Gift Ideas 2024",
         post:Christmas2024,
         cover_photo:Christmas2024.COVER_PHOTO,
     }
