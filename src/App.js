@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router, Route, Switch, HashRouter } from "react-router-dom";
 import Nav from './components/header';
 import Blog from './pages/blog';
 import Home from './pages/home';
@@ -39,14 +39,14 @@ getAnalytics(app);
 class App extends Component {
   render() {
     return (
-      <Router history={history}>
+      <HashRouter>
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/bat/:id" component={GenerateBlog.GenerateBlog} />
         </Switch>
-      </Router>
+      </HashRouter>
     );
   }
 }
