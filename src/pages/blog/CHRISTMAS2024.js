@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
@@ -23,14 +23,14 @@ const electrical_photos = {
 
 const electrical = [
     {
-        src:Pics.photos[0].pine64,
-        width:150,
-        height:250,
+        src: Pics.photos[0].pine64,
+        width: 150,
+        height: 250,
     },
     {
-        src:Pics.photos[0].ts100,
-        width:150,
-        height:200, 
+        src: Pics.photos[0].ts100,
+        width: 150,
+        height: 200,
     }
 ]
 
@@ -87,24 +87,53 @@ const compute = [
 
 const wearables = [
     {
-        src:Pics.photos[0].Garmin2,
-        width:150,
-        height:150
+        src: Pics.photos[0].Garmin2,
+        width: 150,
+        height: 150
     }
 ]
 
 const tools = [
     {
-        src:Pics.photos[0].xcool,
-        width:150,
-        height:200,
+        src: Pics.photos[0].xcool,
+        width: 150,
+        height: 200,
     },
     {
-        src:Pics.photos[0].klein,
-        width:150,
-        height:150,
+        src: Pics.photos[0].klein,
+        width: 150,
+        height: 150,
     }
 ]
+
+const btn  = {
+  backgroundColor: '#777',
+  color: 'white',
+  cursor: 'pointer',
+  padding: '18px',
+  width: '100%',
+  border: 'none',
+  textAlign: 'left',
+  outline: 'none',
+  fontSize: '15px',
+}
+
+function collapsible() {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+}
 
 export default function Bag(props) {
     if (props.loading) {
@@ -122,8 +151,10 @@ export default function Bag(props) {
                             <Main title="Tech Christmas Gift Ideas 2024" posts={posts} />
                             <div style={{ width: '90%', marginLeft: '6%', fontSize: '1rem' }}>
                                 <b>Intro:</b>
-                                <p>The holidays are fast approaching, and finding the perfect gift for the tech enthusiast in your life can be daunting. But fear not! We've compiled a list of the best tech gadgets and accessories for 2024 that are sure to bring a smile to anyone's face. Plus, as an Amazon Affiliate, I’ve included handy links to make your shopping easier—buying through these links supports this blog at no extra cost to you!</p>
-                                <div>
+                                <p>The holidays are fast approaching, and finding the perfect gift for the tech enthusiast in your life can be daunting. But fear not! I've compiled a list of the best tech gadgets and accessories for 2024 that are sure to bring a smile to anyone's face. Plus, as an Amazon Affiliate, I’ve included handy links to make your shopping easier—buying through these links supports this blog at no extra cost to you!</p>
+                                <button style={btn} type="button" onClick={collapsible} class="collapsible">Categories</button>
+                                
+                                <div class="content">
                                     <ul style={{ display: 'flex', flexDirection: 'column', }}>
                                         <li><Link to="electrical" spy={true} smooth={true}>Electrical</Link></li>
                                         <p></p>
@@ -142,6 +173,7 @@ export default function Bag(props) {
                                     </ul>
                                 </div>
                                 <div id="electrical">
+                                    <p></p>
                                     <b>Electrical</b>
                                     <h4>Raspberry PI 5</h4>
                                     <a href='https://amzn.to/3OpOAUS'><img src={electrical_photos.src} alt="pi5" width={electrical_photos.width} height={electrical_photos.height}></img></a>
