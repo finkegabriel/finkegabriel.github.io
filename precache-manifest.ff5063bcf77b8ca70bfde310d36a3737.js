@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f780cd29b263835fb3a6",
+    "revision": "77127ec0d7c5ed42bf97",
     "url": "/static/css/main.844957a3.chunk.css"
   },
   {
-    "revision": "f780cd29b263835fb3a6",
-    "url": "/static/js/main.7e541a55.chunk.js"
+    "revision": "77127ec0d7c5ed42bf97",
+    "url": "/static/js/main.458b202a.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "bd4290da128b2261ee14",
-    "url": "/static/js/2.3d6554c5.chunk.js"
+    "revision": "5831f79075b6174b22ae",
+    "url": "/static/js/2.24ddebbd.chunk.js"
   },
   {
     "revision": "c0057dbcee3052a2c23fe89d5a6a0b77",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/PXL_20211128_215554300.f71d8f0c.jpg"
   },
   {
-    "revision": "9de3ad602f057499207deff769a57375",
+    "revision": "f5409e507b2ad6450b2b0d0a639edb2d",
     "url": "/index.html"
   }
 ];
