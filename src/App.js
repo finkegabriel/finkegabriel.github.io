@@ -8,7 +8,7 @@ import MedProject from './pages/medproject';
 import IcedDev from './pages/iceddev';
 import Portfolio from './pages/portfolio';
 import GenerateBlog from './posts/generateBlog';
-import { createBrowserHistory } from 'history';
+import { createHashHistory } from 'history';
 import ReactGA from 'react-ga4';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
@@ -17,7 +17,7 @@ const trackingId = 'G-NHZE3SXGRX'; // Replace with your Google Analytics trackin
 ReactGA.initialize('G-NHZE3SXGRX');
 console.log("tracker ", trackingId);
 
-const history = createBrowserHistory();
+const history = createHashHistory();
 
 history.listen(location => {
   ReactGA.send({ hitType: "pageview", page: location.pathname }); // Update the user's current page
