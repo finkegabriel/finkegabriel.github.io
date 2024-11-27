@@ -93,6 +93,19 @@ const wearables = [
     }
 ]
 
+const tools = [
+    {
+        src:Pics.photos[0].xcool,
+        width:150,
+        height:200,
+    },
+    {
+        src:Pics.photos[0].klein,
+        width:150,
+        height:150,
+    }
+]
+
 export default function Bag(props) {
     if (props.loading) {
         return null;
@@ -123,21 +136,24 @@ export default function Bag(props) {
                                         <li><Link to="compute" smooth={true}>Compute</Link></li>
                                         <p></p>
                                         <li><Link to="wearables" smooth={true}>Wearables</Link></li>
+                                        <p></p>
+                                        <li><Link to="tools" smooth={true}>Tools</Link></li>
+
                                     </ul>
                                 </div>
                                 <div id="electrical">
                                     <b>Electrical</b>
                                     <h4>Raspberry PI 5</h4>
                                     <a href='https://amzn.to/3OpOAUS'><img src={electrical_photos.src} alt="pi5" width={electrical_photos.width} height={electrical_photos.height}></img></a>
-                                    <p><a href='https://amzn.to/3OpOAUS'>Raspberry Pi 5</a></p>
+                                    <p><a href='https://amzn.to/3OpOAUS'>Shop Now on Amazon</a></p>
 
                                     <h4>Pine64 Soldering Iron</h4>
                                     <a href='https://amzn.to/4eSo6Ge'><img src={electrical[0].src} alt="Pine64" width={electrical[0].width} height={electrical[0].height}></img></a>
-                                    <p><a href='https://amzn.to/4eSo6Ge'>Pine64 Soldering Iron</a></p>
+                                    <p><a href='https://amzn.to/4eSo6Ge'>Shop Now on Amazon</a></p>
 
                                     <h4>TS100 Soldering Iron</h4>
                                     <a href='https://amzn.to/4iaWHlK'><img src={electrical[1].src} alt="Pine64" width={electrical[1].width} height={electrical[1].height}></img></a>
-                                    <p><a href='https://amzn.to/4iaWHlK'>TS100 Soldering Iron</a></p>
+                                    <p><a href='https://amzn.to/4iaWHlK'>Shop Now on Amazon</a></p>
 
                                 </div>
 
@@ -146,15 +162,15 @@ export default function Bag(props) {
 
                                     <h4>5.11 Rush 24</h4>
                                     <a href='https://amzn.to/3VcUNat'><img src={bag_photos.src} alt="5.11" width={bag_photos.width} height={bag_photos.height}></img></a>
-                                    <p><a href='https://amzn.to/3VcUNat'>5.11 Rush 24</a></p>
+                                    <p><a href='https://amzn.to/3VcUNat'>Shop Now on Amazon</a></p>
 
                                     <h4>MOLLE Pouch 4 Pack</h4>
                                     <a href='https://amzn.to/3CNxD4a'><img src={bag[0].src} alt="5.11" width={bag[0].width} height={bag[0].height}></img></a>
-                                    <p><a href='https://amzn.to/3CNxD4a'>MOLLE pouch 4 pack</a></p>
+                                    <p><a href='https://amzn.to/3CNxD4a'>Shop Now on Amazon</a></p>
 
                                     <h4>MOLLE Water Bottle Pouch</h4>
                                     <a href='https://amzn.to/3Z9uIdv'><img src={bag[1].src} alt="5.11" width={bag[1].width} height={bag[1].height}></img></a>
-                                    <p><a href='https://amzn.to/3Z9uIdv'>MOLLE Water Bottle Pouch</a></p>
+                                    <p><a href='https://amzn.to/3Z9uIdv'>Shop Now on Amazon</a></p>
 
                                 </div>
 
@@ -163,7 +179,7 @@ export default function Bag(props) {
 
                                     <h4>GL.Inet travel router</h4>
                                     <a href='https://amzn.to/3ARbotI'><img src={networking.src} alt="travel router" width={networking.width} height={networking.height}></img></a>
-                                    <p><a href='https://amzn.to/3ARbotI'>GL.Inet travel router</a></p>
+                                    <p><a href='https://amzn.to/3ARbotI'>Shop Now on Amazon</a></p>
 
                                 </div>
 
@@ -172,24 +188,24 @@ export default function Bag(props) {
 
                                     <h4>Lego Mars Perseverance Rover</h4>
                                     <a href='https://amzn.to/4i0TJjX'><img src={toys[0].src} alt="Lego" width={toys[0].width} height={toys[0].height}></img></a>
-                                    <p><a href='https://amzn.to/4i0TJjX'>Lego Mars Perseverance Rover</a></p>
+                                    <p><a href='https://amzn.to/4i0TJjX'>Shop Now on Amazon</a></p>
 
                                     <h4>Mastermind Board Game</h4>
                                     <a href='https://amzn.to/4i56qKu'><img src={toys[1].src} alt="Mastermind" width={toys[1].width} height={toys[1].height}></img></a>
-                                    <p><a href='https://amzn.to/4i56qKu'>Mastermind</a></p>
+                                    <p><a href='https://amzn.to/4i56qKu'>Shop Now on Amazon</a></p>
 
                                 </div>
 
                                 <div id="compute">
 
-                                    <b>Laptops/Compute</b>
+                                    <b>Laptops / Compute</b>
                                     <h4>X1 Carbon nano</h4>
-                                    <a href='https://amzn.to/495RNT7'><img src={compute[0].src} alt="Lego" width={compute[0].width} height={compute[0].height}></img></a>
-                                    <p><a href='https://amzn.to/495RNT7'>X1 Carbon nano</a></p>
+                                    <a href='https://amzn.to/495RNT7'><img src={compute[0].src} alt="x1" width={compute[0].width} height={compute[0].height}></img></a>
+                                    <p><a href='https://amzn.to/495RNT7'>Shop Now on Amazon</a></p>
 
                                     <h4>2024 Apple MacBook Air</h4>
-                                    <a href='https://amzn.to/4eKdFEV'><img src={compute[1].src} alt="Lego" width={compute[1].width} height={compute[1].height}></img></a>
-                                    <p><a href='https://amzn.to/4eKdFEV'>2024 Apple MacBook Air</a></p>
+                                    <a href='https://amzn.to/4eKdFEV'><img src={compute[1].src} alt="apple" width={compute[1].width} height={compute[1].height}></img></a>
+                                    <p><a href='https://amzn.to/4eKdFEV'>Shop Now on Amazon</a></p>
 
                                 </div>
 
@@ -199,7 +215,18 @@ export default function Bag(props) {
                                     <b>Wearables</b>
                                     <h4>Garmin Instinct 2 Solar</h4>
                                     <a href='https://amzn.to/3ZrivCg'><img src={wearables[0].src} alt="Lego" width={wearables[0].width} height={wearables[0].height}></img></a>
-                                    <p><a href='https://amzn.to/3ZrivCg'>X1 Carbon nano</a></p>
+                                    <p><a href='https://amzn.to/3ZrivCg'>Shop Now on Amazon</a></p>
+                                </div>
+
+                                <div id="tools">
+                                    <b>Tools</b>
+                                    <h4>XCool Precision Screw Driver</h4>
+                                    <a href='https://amzn.to/3Os2GFq'><img src={tools[0].src} alt="xcool" width={tools[0].width} height={tools[0].height}></img></a>
+                                    <p><a href='https://amzn.to/3Os2GFq'>Shop Now on Amazon</a></p>
+
+                                    <h4>Klein Precision Screw Driver</h4>
+                                    <a href='https://amzn.to/3Owr88k'><img src={tools[1].src} alt="xcool" width={tools[1].width} height={tools[1].height}></img></a>
+                                    <p><a href='https://amzn.to/3Owr88k'>Shop Now on Amazon</a></p>
                                 </div>
                             </div>
                         </Grid>
