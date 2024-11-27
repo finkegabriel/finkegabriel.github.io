@@ -2,6 +2,7 @@ import USDA from './USDA/USDA';
 import TELESCOPE from './TELESCOPE/TELESCOPE';
 import BAG from './BAG/BAG';
 import CIRCUIT_PINE from './CIRCUIT_PINE';
+import Christmas2024 from './Christmas2024';
 
 export default {
     USDA: {
@@ -28,5 +29,10 @@ export default {
         title: "EDC Bag",
         post: BAG,
         cover_photo: BAG.COVER_PHOTO,
+    },
+    Christmas2024:{
+        title:"Christmas gifts 2024",
+        post:Christmas2024,
+        cover_photo:Christmas2024.COVER_PHOTO,
     }
 }

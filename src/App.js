@@ -13,8 +13,8 @@ import ReactGA from 'react-ga4';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { Adsense } from '@ctrl/react-adsense';
-const trackingId = 'G-DHR8Q1P969'; // Replace with your Google Analytics tracking ID
-ReactGA.initialize('G-DHR8Q1P969');
+const trackingId = 'G-NHZE3SXGRX'; // Replace with your Google Analytics tracking ID
+ReactGA.initialize('G-NHZE3SXGRX');
 console.log("tracker ", trackingId);
 
 const history = createBrowserHistory();
@@ -45,9 +45,6 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/bat/:id" component={GenerateBlog.GenerateBlog} />
-          <Route path="/activeg" component={ActiveG.ActiveG} />
-          <Route path="/iceddev" component={IcedDev.IcedDev} />
-          <Route path="/medproject" component={MedProject.MedProject} />
         </Switch>
       </Router>
     );
