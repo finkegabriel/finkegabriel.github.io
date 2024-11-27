@@ -122,7 +122,7 @@ export default function Bag(props) {
                             <Main title="Tech Christmas Gift Ideas 2024" posts={posts} />
                             <div style={{ width: '90%', marginLeft: '6%', fontSize: '1rem' }}>
                                 <b>Intro:</b>
-                                <p>If someone in your life is a maker/hacker/tech enthusiast I have curated a list of general items for possible gift ideas. All the items listed is stuff I either own or have had experience with.</p>
+                                <p>The holidays are fast approaching, and finding the perfect gift for the tech enthusiast in your life can be daunting. But fear not! We've compiled a list of the best tech gadgets and accessories for 2024 that are sure to bring a smile to anyone's face. Plus, as an Amazon Affiliate, I’ve included handy links to make your shopping easier—buying through these links supports this blog at no extra cost to you!</p>
                                 <div>
                                     <ul style={{ display: 'flex', flexDirection: 'column', }}>
                                         <li><Link to="electrical" spy={true} smooth={true}>Electrical</Link></li>
