@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter, BrowserRouter as Router, Route, Switch, HashRouter } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from './components/header';
 import Blog from './pages/blog';
 import Home from './pages/home';
-import ActiveG from './pages/activeg';
-import MedProject from './pages/medproject';
-import IcedDev from './pages/iceddev';
-import Portfolio from './pages/portfolio';
 import GenerateBlog from './posts/generateBlog';
 import { createHashHistory } from 'history';
 import ReactGA from 'react-ga4';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
-import { Adsense } from '@ctrl/react-adsense';
 const trackingId = 'G-NHZE3SXGRX'; // Replace with your Google Analytics tracking ID
 ReactGA.initialize('G-NHZE3SXGRX');
 console.log("tracker ", trackingId);
@@ -39,14 +34,14 @@ getAnalytics(app);
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <Router>
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blog" component={Blog} />
           <Route path="/bat/:id" component={GenerateBlog.GenerateBlog} />
         </Switch>
-      </HashRouter>
+      </Router>
     );
   }
 }
