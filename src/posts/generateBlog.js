@@ -7,8 +7,8 @@ import CHRISTMAS2024 from '../pages/blog/CHRISTMAS2024';
 const posts = {
     post: [
         { uuid: "/blog/circuitpine", component: <CIRCUIT_PINE />, post: Posts.CIRCUIT_PINE, isDisabled: true },
-        { uuid: "/bat/USDA", component: <USDA />, post: Posts.USDA, isDisabled: false },
-          { uuid: "/bat/2024", component:<CHRISTMAS2024 />, post: Posts.Christmas2024, isDisabled: false},
+        { uuid: "/post/USDA", component: <USDA />, post: Posts.USDA, isDisabled: false },
+          { uuid: "/post/2024", component:<CHRISTMAS2024 />, post: Posts.Christmas2024, isDisabled: false},
 ],
 }
 
