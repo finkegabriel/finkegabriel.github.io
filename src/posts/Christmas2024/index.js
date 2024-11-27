@@ -13,6 +13,8 @@ import Pouch from './photos/pouch.jpg';
 import WaterPouch from './photos/waterpouch.jpg'
 import x1nano from './photos/x1nano.jpg';
 import xcool from './photos/xcool.jpg';
+import pine64 from './photos/pine64.jpg';
+import ts100 from './photos/ts100.jpg';
 
 const photos = [
     {
@@ -30,7 +32,9 @@ const photos = [
         glinet:Glinet,
         Garmin2:Garmin2,
         Macbook:Macbook,
-        Fiveeleven:Fiveeleven
+        Fiveeleven:Fiveeleven,
+        pine64:pine64,
+        ts100:ts100
     },
 ]
 

@@ -21,6 +21,19 @@ const electrical_photos = {
     height: 150,
 };
 
+const electrical = [
+    {
+        src:Pics.photos[0].pine64,
+        width:150,
+        height:250,
+    },
+    {
+        src:Pics.photos[0].ts100,
+        width:150,
+        height:200, 
+    }
+]
+
 const bag_photos = {
     src: Pics.photos[0].Fiveeleven,
     width: 240,
@@ -119,11 +132,11 @@ export default function Bag(props) {
                                     <p><a href='https://amzn.to/3OpOAUS'>Raspberry Pi 5</a></p>
 
                                     <h4>Pine64 Soldering Iron</h4>
-                                    <a href='https://amzn.to/4eSo6Ge'><img alt="Pine64" width={electrical_photos.width} height={electrical_photos.height}></img></a>
+                                    <a href='https://amzn.to/4eSo6Ge'><img src={electrical[0].src} alt="Pine64" width={electrical[0].width} height={electrical[0].height}></img></a>
                                     <p><a href='https://amzn.to/4eSo6Ge'>Pine64 Soldering Iron</a></p>
 
                                     <h4>TS100 Soldering Iron</h4>
-                                    <a href='https://amzn.to/4iaWHlK'><img alt="Pine64" width={electrical_photos.width} height={electrical_photos.height}></img></a>
+                                    <a href='https://amzn.to/4iaWHlK'><img src={electrical[1].src} alt="Pine64" width={electrical[1].width} height={electrical[1].height}></img></a>
                                     <p><a href='https://amzn.to/4iaWHlK'>TS100 Soldering Iron</a></p>
 
                                 </div>
