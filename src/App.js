@@ -34,7 +34,7 @@ getAnalytics(app);
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/">
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
