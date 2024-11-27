@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { isMobile } from 'react-device-detect';
+import { withRouter } from "react-router-dom";
 
 const baseStyles = {
     cardWidth: {
@@ -35,7 +36,8 @@ const baseStyles = {
     }
 }
 
-export default function SimpleCard(props) {
+function SimpleCard(props) {
+    console.log("PROPS ",props);
     return (
         <div style={props.style}>
             <center>
@@ -59,10 +61,12 @@ export default function SimpleCard(props) {
                         </CardContent>
                     </center>
                     <CardActions>
-                        <Button disabled={props.isDisabled} onClick={() => props.props.history.push(props.url)} size="small">Continue Reading...</Button>
+                        <Button disabled={props.isDisabled} onClick={() => props.history.push(props.url)} size="small">Continue Reading...</Button>
                     </CardActions>
                 </Card>
             </center>
         </div>
     );
 }
+
+export default withRouter(SimpleCard);
