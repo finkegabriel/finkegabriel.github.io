@@ -24,7 +24,7 @@ const electrical_photos = {
 const bag_photos = {
         src:Pics.photos[0].Fiveeleven,
         width: 240,
-        height: 150,
+        height: 200,
 }
 
 export default function Bag(props) {
@@ -51,6 +51,8 @@ export default function Bag(props) {
                                 <b>Backpack</b>
                                 <h4>5.11 Rush 24</h4>
                                 <a href='https://amzn.to/3VcUNat'><img src={bag_photos.src} alt="5.11" width={bag_photos.width} height={bag_photos.height}></img></a>
+                                <p><a href='https://amzn.to/3VcUNat'>5.11 Rush 24</a></p>
+
                             </div>
                         </Grid>
                     </main>
