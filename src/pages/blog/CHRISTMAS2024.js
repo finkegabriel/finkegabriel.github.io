@@ -90,6 +90,16 @@ const wearables = [
         src: Pics.photos[0].Garmin2,
         width: 150,
         height: 150
+    },
+    {
+        src:Pics.photos[0].PodsPro2,
+        width:150,
+        height:175,
+    },
+    {
+        src:Pics.photos[0].Pods2Gen,
+        width:150,
+        height:200,
     }
 ]
 
@@ -248,6 +258,15 @@ export default function Bag(props) {
                                     <h4>Garmin Instinct 2 Solar</h4>
                                     <a href='https://amzn.to/3ZrivCg'><img src={wearables[0].src} alt="Lego" width={wearables[0].width} height={wearables[0].height}></img></a>
                                     <p><a href='https://amzn.to/3ZrivCg'>Shop Now on Amazon</a></p>
+
+                                    <h4>Apple Airpods pros 2</h4>
+                                    <a href='https://amzn.to/3OvhdjD'><img src={wearables[1].src} alt="Apple airpods" width={wearables[1].width} height={wearables[1].height}></img></a>
+                                    <p><a href='https://amzn.to/3OvhdjD'>Shop Now on Amazon</a></p>
+
+                                    <h4>Apple Airpods 2nd generation</h4>
+                                    <a href='https://amzn.to/3CWbhxj'><img src={wearables[2].src} alt="Apple airpods" width={wearables[2].width} height={wearables[2].height}></img></a>
+                                    <p><a href='https://amzn.to/3CWbhxj'>Shop Now on Amazon</a></p>
+ 
                                 </div>
 
                                 <div id="tools">
