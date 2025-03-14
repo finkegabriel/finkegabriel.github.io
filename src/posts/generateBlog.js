@@ -3,12 +3,14 @@ import USDA from '../pages/blog/USDA';
 import Posts from './index.js';
 import CIRCUIT_PINE from '../pages/blog/CIRCUIT_PINE';
 import CHRISTMAS2024 from '../pages/blog/CHRISTMAS2024';
+import Privacy from '../pages/blog/privacy_policy.js';
 
 const posts = {
     post: [
         { uuid: "/blog/circuitpine", component: <CIRCUIT_PINE />, post: Posts.CIRCUIT_PINE, isDisabled: true },
         { uuid: "/post/USDA", component: <USDA />, post: Posts.USDA, isDisabled: false },
           { uuid: "/post/2024", component:<CHRISTMAS2024 />, post: Posts.Christmas2024, isDisabled: false},
+          {uuid:"/post/privacypolicy",component:<Privacy/>}
 ],
 }
 
