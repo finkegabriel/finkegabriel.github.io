@@ -38,8 +38,8 @@ class App extends Component {
         <Nav />
         <Switch>
           <Link exact path="/" component={Home} />
-          <Link path="/blog" component={Blog} />
-          <Link path="/post/:id" component={GenerateBlog.GenerateBlog} />
+          <Link path="/post" component={Blog} />
+          <Link path="/bat/:id" component={GenerateBlog.GenerateBlog} />
         </Switch>
       </Router>
     );

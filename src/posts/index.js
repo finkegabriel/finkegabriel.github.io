@@ -3,6 +3,7 @@ import TELESCOPE from './TELESCOPE/TELESCOPE';
 import BAG from './BAG/BAG';
 import CIRCUIT_PINE from './CIRCUIT_PINE';
 import Christmas2024 from './Christmas2024';
+import PrivacyPolicy from '../pages/blog/privacy_policy';
 
 export default {
     USDA: {
@@ -34,5 +35,10 @@ export default {
         title:"Christmas Gift Ideas 2024",
         post:Christmas2024,
         cover_photo:Christmas2024.COVER_PHOTO,
-    }
+    },
+    PrivacyPolicy:{
+        title:"Privacy Policy",
+        // post:Christmas2024,
+        // cover_photo:Christmas2024.COVER_PHOTO,
+    },
 }

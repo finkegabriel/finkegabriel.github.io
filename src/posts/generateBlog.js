@@ -7,10 +7,10 @@ import Privacy from '../pages/blog/privacy_policy.js';
 
 const posts = {
     post: [
-        { uuid: "/blog/circuitpine", component: <CIRCUIT_PINE />, post: Posts.CIRCUIT_PINE, isDisabled: true },
-        { uuid: "/post/USDA", component: <USDA />, post: Posts.USDA, isDisabled: false },
-          { uuid: "/post/2024", component:<CHRISTMAS2024 />, post: Posts.Christmas2024, isDisabled: false},
-          {uuid:"/post/privacypolicy",component:<Privacy/>}
+        { uuid: "/bat/circuitpine", component: <CIRCUIT_PINE />, post: Posts.CIRCUIT_PINE, isDisabled: true },
+        { uuid: "/bat/USDA", component: <USDA />, post: Posts.USDA, isDisabled: false },
+          { uuid: "/bat/2024", component:<CHRISTMAS2024 />, post: Posts.Christmas2024, isDisabled: false},
+          {uuid:"/bat/privacypolicy",component:<Privacy/>,post:Posts.PrivacyPolicy}
 ],
 }
 
