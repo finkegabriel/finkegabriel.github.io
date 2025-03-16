@@ -8,6 +8,7 @@ import { createHashHistory } from 'history';
 import ReactGA from 'react-ga4';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
+import Hire from './pages/hireme';
 const trackingId = 'G-NHZE3SXGRX'; // Replace with your Google Analytics tracking ID
 ReactGA.initialize('G-NHZE3SXGRX');
 console.log("tracker ", trackingId);
@@ -39,6 +40,7 @@ class App extends Component {
         <Switch>
           <Link exact path="/" component={Home} />
           <Link path="/post" component={Blog} />
+          <Link path="/hireme" component={Hire}/>
           <Link path="/bat/:id" component={GenerateBlog.GenerateBlog} />
         </Switch>
       </Router>

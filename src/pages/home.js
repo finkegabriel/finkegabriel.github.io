@@ -49,7 +49,7 @@ function Home() {
                     jobDesc=""
                 />
                 <div style={baseStyles.status}>
-                Hello, I am a GIS Specialist in Phoenix, Arizona. 
+                Hello, I am a GIS professional in Phoenix, Arizona. 
                 </div>
                 <footer style={baseStyles.footer}>
                 <p><img src={Github_logo} height="20px" width="20px"></img> <a style={baseStyles.github} href="https://github.com/finkegabriel">Github</a><br></br></p>
