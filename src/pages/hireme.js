@@ -1,6 +1,5 @@
 import React from 'react';
-import Card from '../components/hireme';
-import Headshot from '../img/headshot.png';
+import './ProfileCard.css';
 
 const baseStyles = {
     card: {
@@ -29,6 +28,13 @@ const baseStyles = {
         textDecoration: 'none',
         color: 'inherit',
     },
+    contact: {
+        display:"grid",
+        margin: "auto",
+        width: "50%",
+        padding: "10px",
+    }
+
 }
 
 // const Gabe = "https://avatars2.githubusercontent.com/u/40010444?s=460&v=4";
@@ -36,21 +42,47 @@ const baseStyles = {
 function Hire() {
     return (
         <div style={baseStyles.card}>
+
             <center>
-                <Card
+                {/* <Card
                 cover_photo={Headshot}
-                body="Hello, I'm a GIS professional currently accepting freelance work.
-                Over the last 9 years I have gained experience in engery, water utiliy, fiber optic telecom, and software development.
+                body="
                 "
-                />
-            <br></br>
+                /> */}
+                <div className="profile-card">
+                    <div className="cover-photo"></div>
+                    <div className="profile-info">
+                        <img
+                            src="https://avatars2.githubusercontent.com/u/40010444?s=460&v=4"
+                            alt="Profile"
+                            className="profile-img"
+                        />
+                        <div className="profile-details">
+                            <h1>Gabriel F.</h1>
+                            <h3>GIS Professional | Software Developer</h3>
+                            <div className="about">
+                            I'm a GIS professional currently accepting freelance work.
+                Over the last 9 years I have gained experience in energy, water utiliy, fiber optic telecom, and software development. Let me help you, make informed decisions with your data!
+                            </div>
+                            <div className="contact-info" style={baseStyles.contact}>
+                                <span>Email: gabriel.finke98@gmail.com</span>
+                                <span>Location: Phoenix, AZ</span>
+                            </div>
+                            <div className="social-links">
+                                <a href="https://www.linkedin.com/in/gabriel-finke-1a647b229" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://github.com/finkegabriel" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
             </center>
             <center>
 
-        
-               <footer>
 
-               </footer>
+                <footer>
+
+                </footer>
             </center>
         </div>
     )

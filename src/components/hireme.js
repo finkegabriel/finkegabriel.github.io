@@ -42,7 +42,7 @@ const baseStyles = {
     },
     center:{
         padding:"10vh",
-    }
+    },
 }
 
 function HireMe(props) {

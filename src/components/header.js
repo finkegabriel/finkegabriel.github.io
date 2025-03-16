@@ -58,9 +58,9 @@ function ButtonAppBar(props) {
                   Donate
                 </a>
               </li>
-              <li style={baseStyles.a}>
+              {/* <li style={baseStyles.a}>
                 <Link style={baseStyles.li} to="/hireme">Hire Me</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </Toolbar>
