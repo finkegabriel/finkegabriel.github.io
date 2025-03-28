@@ -3,12 +3,14 @@ import USDA from '../pages/blog/USDA';
 import Posts from './index.js';
 import CIRCUIT_PINE from '../pages/blog/CIRCUIT_PINE';
 import Cyberdeck from '../pages/blog/Cyberdeck.js';
+import Yaris from '../pages/blog/Yaris';
 
 const posts = {
     post: [
         { uuid: "/bat/circuitpine", component: <CIRCUIT_PINE />, post: Posts.CIRCUIT_PINE, isDisabled: true },
         { uuid: "/bat/USDA", component: <USDA />, post: Posts.USDA, isDisabled: false },
         {uuid:"/bat/cyberdeckv1",component:<Cyberdeck/>,post:Posts.Cyberdeck,isDisabled:false},
+        {uuid:"/bat/yaris",component:<Yaris/>,post:Posts.Yaris,isDisabled:false}
 ],
 }
 

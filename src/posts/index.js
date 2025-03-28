@@ -5,6 +5,7 @@ import CIRCUIT_PINE from './CIRCUIT_PINE';
 import Christmas2024 from './Christmas2024';
 import PrivacyPolicy from '../pages/blog/privacy_policy';
 import Cyberdeck from './Cyberdeck';
+import Yaris from './Yaris';
 
 export default {
     USDA: {
@@ -46,5 +47,10 @@ export default {
         title:"Cyberdeck",
         post: Cyberdeck,
         cover_photo: Cyberdeck.COVER_PHOTO,
+    },
+    Yaris:{
+        title:"Yaris Shelf",
+        post: Yaris,
+        cover_photo: Yaris.COVER_PHOTO,
     }
 }
