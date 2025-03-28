@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "4c91a436af80b14ac5cd",
+    "revision": "88ebd4cc11df5aab1ddf",
     "url": "/static/css/main.af0e75a7.chunk.css"
   },
   {
-    "revision": "4c91a436af80b14ac5cd",
-    "url": "/static/js/main.63135f10.chunk.js"
+    "revision": "88ebd4cc11df5aab1ddf",
+    "url": "/static/js/main.a6aaab56.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "dc574e905b0a1997a91a",
-    "url": "/static/js/2.a6eb05e1.chunk.js"
+    "revision": "9b809846df75e13948b4",
+    "url": "/static/js/2.17ad3c31.chunk.js"
   },
   {
     "revision": "f59d61fab947b40b06c737864bc0fd6f",
@@ -30,6 +30,10 @@ self.__precacheManifest = [
   {
     "revision": "70c741ebd9d3d44ca30bbce4d121f914",
     "url": "/static/media/cyberdeck.70c741eb.png"
+  },
+  {
+    "revision": "7e8e91291e6621e7b516a59be1e7a9bc",
+    "url": "/static/media/Yaris.7e8e9129.jpg"
   },
   {
     "revision": "39edb9ea879e5845f706ecfce64f1128",
@@ -112,7 +116,7 @@ self.__precacheManifest = [
     "url": "/static/media/ts100.87a2f2af.jpg"
   },
   {
-    "revision": "18aaf4815a84a5a261df3ad31da66aac",
+    "revision": "68fa36385da82aa50aec991dd67eedfb",
     "url": "/index.html"
   }
 ];
