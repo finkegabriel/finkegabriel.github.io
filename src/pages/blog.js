@@ -16,6 +16,7 @@ class Blog extends Component {
                         date={p.post.date}
                         imageStyle={{
                             borderRadius: '75px',
+                            height:'44vh',
                         }}
                         cover_photo={p.post.cover_photo}
                     ></Card>

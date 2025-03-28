@@ -4,6 +4,7 @@ import BAG from './BAG/BAG';
 import CIRCUIT_PINE from './CIRCUIT_PINE';
 import Christmas2024 from './Christmas2024';
 import PrivacyPolicy from '../pages/blog/privacy_policy';
+import Cyberdeck from './Cyberdeck';
 
 export default {
     USDA: {
@@ -41,4 +42,9 @@ export default {
         // post:Christmas2024,
         // cover_photo:Christmas2024.COVER_PHOTO,
     },
+    Cyberdeck:{
+        title:"Cyberdeck",
+        post: Cyberdeck,
+        cover_photo: Cyberdeck.COVER_PHOTO,
+    }
 }
