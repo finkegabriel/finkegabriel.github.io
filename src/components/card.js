@@ -33,16 +33,88 @@ const baseStyles = {
         right: '0',
         bottom: '0',
         top: '0',
-    }
+    },
+    ellipse: {
+        width: "150px",
+        height: "80px",
+        backgroundColor: "grey",
+        color: "white",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: "50%",
+        fontFamily: "Arial, sans-serif",
+        fontSize: "18px",
+        fontWeight: "bold",
+        boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+        position: "relative",
+    },
+    status: {
+        position: "absolute",
+        bottom: "5px",
+        right: "10px",
+        width: "15px",
+        height: "15px",
+        backgroundColor: "green",
+        borderRadius: "50%",
+        border: "2px solid white",
+    },
+
 }
 
-function SimpleCard(props) {
-    console.log("PROPS ",props);
+const EllipticalIcon = (props) => {
+    const styles = {
+        ellipse: {
+            float: "right",
+            width: "18vh",
+            height: "4vh",
+            backgroundColor: "grey",
+            color: "white",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "12%",
+            fontFamily: "Arial, sans-serif",
+            fontSize: "18px",
+            fontWeight: "bold",
+            boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.2)",
+            position: "relative",
+        },
+        status: {
+            position: "absolute",
+            bottom: "5px",
+            right: "10px",
+            width: "15px",
+            height: "15px",
+            backgroundColor: "green",
+            borderRadius: "50%",
+            border: "2px solid white",
+        }
+    };
+
     return (
-        <div style={props.style}>
+        <div style={styles.ellipse}>
+            <div style={{ float: "right" }}>
+                {"Status: "}
+                {props.props.status}
+            </div>
+        </div>
+
+
+    );
+};
+
+
+function SimpleCard(props) {
+    return (
+        <div>
             <center>
                 <Card style={baseStyles.cardWidth}>
                     <center>
+                        <EllipticalIcon
+                            props={props}
+                        />
+                        <br></br>
                         <CardContent>
                             <center>
                                 <Typography color="textSecondary" gutterBottom>

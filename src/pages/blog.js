@@ -19,6 +19,7 @@ class Blog extends Component {
                             height:'44vh',
                         }}
                         cover_photo={p.post.cover_photo}
+                        status={p.status}
                     ></Card>
                 ))}
             </div>
