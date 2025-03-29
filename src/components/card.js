@@ -66,7 +66,7 @@ const EllipticalIcon = (props) => {
     const styles = {
         ellipse: {
             float: "right",
-            width: "18vh",
+            width: "16vh",
             height: "4vh",
             backgroundColor: "grey",
             color: "white",
