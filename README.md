@@ -1,27 +1,42 @@
-[![finkegabriel_deploy](https://github.com/finkegabriel/finkegabriel/actions/workflows/finkegabriel_deploy.yml/badge.svg?branch=main)](https://github.com/finkegabriel/finkegabriel/actions/workflows/finkegabriel_deploy.yml)
-<br/>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3b71f8fc-da62-428d-8474-aefe07418661/deploy-status)](https://app.netlify.com/sites/amazing-visvesvaraya-b095d4/deploys)
-# WhoAmI
-I am an environmental engineering major here in Arizona. I hack on software/hardware, am a member of HeatSync Labs in downtown Mesa (PHX local hackerspace). 
+# sv
 
-# Tech stack
-    🦀 💻 🐬 🐘 
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-# Where can you find me?
+## Creating a project
 
-https://twitter.com/Citizen4110 <br />
-https://github.com/finkegabriel <br />
-https://finkegabriel.com
+If you're seeing this, you've probably already done this step. Congrats!
 
-# Favorite things to do
+```sh
+# create a new project
+npx sv create my-app
+```
 
-Been doing some ML (Machine Learning) with TensorFlow recently. <br />
-Hiking ⛰<br>
-Running 🏃 <br>
+To recreate this project with the same configuration:
 
-# ideas 💡 && what I have been up to in 2022
+```sh
+# recreate this project
+npx sv create --template minimal --types jsdoc --install npm .
+```
 
-Thinking about updating my personal website, and making it more user friendly <br>
-Been writing more rust code <br>
-Working on finshing up my bachelor's <br>
-Working on a project called whichbrick for brick ML detection <br>
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
