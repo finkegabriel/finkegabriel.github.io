@@ -5,23 +5,21 @@
 I am an environmental engineering major here in Arizona. I hack on software/hardware, am a member of HeatSync Labs in downtown Mesa (PHX local hackerspace). 
 
 # Tech stack
-    🦀 💻 🐬 🐘 
+    🦀 💻 🐘
 
 # Where can you find me?
 
-https://twitter.com/Citizen4110 <br />
-https://github.com/finkegabriel <br />
+https://github.com/gabrieljord <br />
 https://finkegabriel.com
 
 # Favorite things to do
 
-Been doing some ML (Machine Learning) with TensorFlow recently. <br />
+Been doing ML (Machine Learning) projects with tinygrad. <br />
 Hiking ⛰<br>
 Running 🏃 <br>
 
-# ideas 💡 && what I have been up to in 2022
+# ideas 💡 && what I have been up to in 2026
 
-Thinking about updating my personal website, and making it more user friendly <br>
-Been writing more rust code <br>
-Working on finshing up my bachelor's <br>
-Working on a project called whichbrick for brick ML detection <br>
+<br>
+Been writing more rust code & Go <br>
+Working on finshing up my bachelor's degree at UofA <br>
