@@ -32,3 +32,7 @@ jobs:
           GTRACKER: ${{ secrets.GTRACKER }}
       - name: Updating Domain
         run: echo "Domain should auto update :)"
+      - name: Update year in Markdown
+        run: |
+          YEAR=$(date +'%Y')
+          sed -i "s/{{CURRENT_YEAR}}/$YEAR/g" README.md

@@ -53,7 +53,7 @@ export default function USDA(){
 
                                 <p>• Kitchen Scale</p>
                             </p>
-                            <p>Ironically, I don’t have many if any pictures of the barcode reader but I do have the final version of the code I wrote for this system on  GitHub. <a href="https://github.com/finkegabriel/USDA_Internship/blob/main/seed_counter/seed_counter.py">HERE</a>  </p>
+                            <p>Ironically, I don’t have many if any pictures of the barcode reader but I do have the final version of the code I wrote for this system on  GitHub. <a href="https://github.com/gabrieljord/USDA_Internship/blob/main/seed_counter/seed_counter.py">HERE</a>  </p>
                             <p></p>
                             <p>Parts used</p>
                             <a target={"_blank"} href={"https://www.amazon.com/gp/product/B00LE5VV1C/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00LE5VV1C&linkCode=as2&tag=gfinke1019-20&linkId=5b9f56e5f85eb4cb26c4a5449f17b1a9"}>WoneNice USB Laser Barcode Scanner Wired Handheld Bar Code Scanner Reader Black</a>

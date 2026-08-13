@@ -6,7 +6,7 @@ class Card extends Component {
         return (
             <div>
                 <center>
-                    <img alt="Gabriel Finke" src={this.props.image} style={this.props.styles} />
+                    <img alt="Gabriel Jordan" src={this.props.image} style={this.props.styles} />
                     <div >
                         <h4>{this.props.name}</h4>
                         <p style={{width:'40vh'}}>{this.props.jobDesc}</p>
